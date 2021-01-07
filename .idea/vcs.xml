@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/360EntSecGroup-Skylar/excelize" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/Luxurioust/excelize" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/mohae/deepcopy" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/richardlehane/mscfb" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/richardlehane/msoleps" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/xuri/efp" vcs="Git" />
+  </component>
+</project>
