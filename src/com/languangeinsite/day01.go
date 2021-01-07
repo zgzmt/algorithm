@@ -3,6 +3,7 @@ package languangeinsite
 import (
 	"fmt"
 	"sort"
+	"strconv"
 )
 
 //切片模仿栈
@@ -61,5 +62,29 @@ func standSort(){
 	sort.Slice(intarry,func(i,j int)bool{
 		return intarry[i]>intarry[j]
 	})
+}
+//复制
+func useCopy(){
+	//删除切片的地i个值；可以用copy将第i+1复制钱前面
+	i := 5
+	a := make([]int,10)
+	copy(a[i:],a[i+1:])
+	//make指定长度，则可以索引赋值
+	a1 := make([]int,i)
+	a1[1]=1
+	//make长度为0则需要使用append来赋值
+	a2 := make([]int,0)
+	a2 = append(a2,3)
+}
+//常用技巧
+func useuse(){
+	//字符串转数字
+	str1 := "123456"
+	num,_ := strconv.Atoi(str1)
+	fmt.Printf("type:%V,value:%d",num,num)
+
+	//整形转字符
+	str := strconv.Itoa(123)
+	fmt.Printf(str)
 
 }
