@@ -9,11 +9,13 @@ func StrStr(hayStack,needle string)int {
 	for i:=0 ; i <len(hayStack);i++{
 		if hayStack[i] == needle[0]{
 			index = i
+			temp := i
 			for j:=0; j < len(needle) ;j++{
 				if hayStack[i]==needle[j]{
 					i++
 				}else{
 						index = -1
+						i = temp
 						break
 				}
 			}
