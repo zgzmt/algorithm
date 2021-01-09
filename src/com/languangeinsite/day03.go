@@ -102,3 +102,31 @@ func posordertra(root *bitTree)[]int {
 	}
 	return result
 }
+
+//层次遍历
+func levelordertra(root *bitTree)[]int{
+	if root == nil {
+		return nil
+	}
+	p := root
+	var result []int
+	queue := make([]*bitTree,0)
+	queue = append(queue,p)
+	for len(queue)>0{
+		lists := make([]int ,0)
+		l := len(queue)
+		for i :=0 ; i <l ; i++{
+			level := queue[0]
+			queue = queue[1:]
+			lists = append(lists,level.val)
+			if level.lef != nil {
+				queue = append(queue,level.lef)
+			}
+			if level.right != nil {
+				queue = append(queue,level.right)
+			}
+		}
+		result = append(result,lists...)
+	}
+	return result
+}
